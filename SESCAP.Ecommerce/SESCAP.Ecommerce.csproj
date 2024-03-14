@@ -1,0 +1,131 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Views\" />
+    <None Remove="Controllers\" />
+    <None Remove="Microsoft.VisualStudio.Web.CodeGeneration.Design" />
+    <None Remove="Views\Home\" />
+    <None Remove="Views\Shared\" />
+    <None Remove="Libraries\" />
+    <None Remove="Libraries\Email\" />
+    <None Remove="Database\" />
+    <None Remove="Microsoft.EntityFrameworkCore" />
+    <None Remove="IBM.Data.DB2.Core-osx" />
+    <None Remove="Microsoft.EntityFrameworkCore.Tools" />
+    <None Remove="IBM.EntityFrameworkCore-osx" />
+    <None Remove="IBM.Data.DB2.Core" />
+    <None Remove="IBM.EntityFrameworkCore" />
+    <None Remove="AutoMapper" />
+    <None Remove="AutoMapper.Extensions.Microsoft.DependencyInjection" />
+    <None Remove="Repositorio\" />
+    <None Remove="Libraries\Sessao\" />
+    <None Remove="Libraries\Login\" />
+    <None Remove="Newtonsoft.Json" />
+    <None Remove="Libraries\Lang\" />
+    <None Remove="Libraries\CriptoSenha\" />
+    <None Remove="Libraries\Filtros\" />
+    <None Remove="Libraries\ExtraiMatriculaCdBarraCartao\" />
+    <None Remove="X.PagedList.Mvc.Core" />
+    <None Remove="Libraries\GeradorQRCode\" />
+    <None Remove="QRCoder" />
+    <None Remove="CPFCNPJ" />
+    <None Remove="Libraries\Pagamento\" />
+    <None Remove="Libraries\Pagamento\Cielo\" />
+    <None Remove="CieloRest" />
+    <None Remove="Views\Pagamento\" />
+    <None Remove="Libraries\Midleware\" />
+    <None Remove="Models\ViewModels\" />
+    <None Remove="Models\ViewModels\Pagamento\" />
+    <None Remove="Models\Constantes\" />
+    <None Remove="Libraries\AutoMapper\" />
+    <None Remove="Microsoft.Extensions.Logging.Debug" />
+    <None Remove="Libraries\Seguranca\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\" />
+    <Folder Include="Controllers\" />
+    <Folder Include="wwwroot/comprovante/" />
+    <Folder Include="wwwroot\css\" />
+    <Folder Include="wwwroot\js\" />
+    <Folder Include="Views\Home\" />
+    <Folder Include="Views\Shared\" />
+    <Folder Include="Libraries\" />
+    <Folder Include="Libraries\Email\" />
+    <Folder Include="Database\" />
+    <Folder Include="Repositorios\" />
+    <Folder Include="Libraries\Sessao\" />
+    <Folder Include="Libraries\Login\" />
+    <Folder Include="wwwroot\imagens\" />
+    <Folder Include="wwwroot\fonts\" />
+    <Folder Include="Libraries\Lang\" />
+    <Folder Include="Libraries\CriptoSenha\" />
+    <Folder Include="Libraries\Filtros\" />
+    <Folder Include="Libraries\GeradorQRCode\" />
+    <Folder Include="Libraries\Pagamento\" />
+    <Folder Include="Libraries\Pagamento\Cielo\" />
+    <Folder Include="Views\Pagamento\" />
+    <Folder Include="Libraries\Middleware\" />
+    <Folder Include="Models\ViewModels\" />
+    <Folder Include="Models\ViewModels\Pagamento\" />
+    <Folder Include="Models\Constantes\" />
+    <Folder Include="Libraries\AutoMapper\" />
+    <Folder Include="Libraries\Seguranca\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="wwwroot\css\" />
+    <Content Remove="wwwroot\js\" />
+    <Content Remove="wwwroot\imagens\" />
+    <Content Remove="wwwroot\Fontes\" />
+    <Content Remove="wwwroot\js\jquery-3.3.1.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.3">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="CPFCNPJ" Version="2.0.5" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="8.0.0" />
+    <PackageReference Include="System.Drawing.Common" Version="8.0.3" />
+    <PackageReference Include="QRCoder-ImageSharp" Version="0.10.0" />
+    <PackageReference Include="Hangfire.Core" Version="1.8.11" />
+    <PackageReference Include="Hangfire.AspNetCore" Version="1.8.11" />
+    <PackageReference Include="Hangfire.MemoryStorage" Version="1.8.0" />
+    <PackageReference Include="Hangfire.InMemory" Version="0.8.0" />
+    <PackageReference Include="QuestPDF" Version="2023.12.6" />
+    <PackageReference Include="IBM.EntityFrameworkCore-lnx" Version="8.0.0.200" />
+    <PackageReference Include="Net.IBM.Data.Db2-lnx" Version="8.0.0.200" />
+    <PackageReference Include="SkiaSharp.NativeAssets.Linux" Version="2.88.7" />
+    <PackageReference Include="HarfBuzzSharp.NativeAssets.Linux" Version="7.3.0.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="Libraries\Lang\Mensagem.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Mensagem.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Database\IEntityTypeConfiguration.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Libraries\Lang\Mensagem.Designer.cs">
+      <DependentUpon>Mensagem.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Cielo">
+      <HintPath>..\Cielo3.0-master\Cielo\bin\Release\netstandard2.0\Cielo.dll</HintPath>
+    </Reference>
+    <Reference Include="Cielo.Models">
+      <HintPath>..\Cielo3.0-master\Cielo.Models\bin\Release\netstandard2.0\Cielo.Models.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

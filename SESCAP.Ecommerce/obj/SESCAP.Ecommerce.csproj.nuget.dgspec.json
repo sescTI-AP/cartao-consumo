@@ -1,0 +1,155 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/sescamapa/Documentos/SESCAP.Ecommerce/SESCAP.Ecommerce/SESCAP.Ecommerce.csproj": {}
+  },
+  "projects": {
+    "/home/sescamapa/Documentos/SESCAP.Ecommerce/SESCAP.Ecommerce/SESCAP.Ecommerce.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/sescamapa/Documentos/SESCAP.Ecommerce/SESCAP.Ecommerce/SESCAP.Ecommerce.csproj",
+        "projectName": "SESCAP.Ecommerce",
+        "projectPath": "/home/sescamapa/Documentos/SESCAP.Ecommerce/SESCAP.Ecommerce/SESCAP.Ecommerce.csproj",
+        "packagesPath": "/home/sescamapa/.nuget/packages/",
+        "outputPath": "/home/sescamapa/Documentos/SESCAP.Ecommerce/SESCAP.Ecommerce/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/sescamapa/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "CPFCNPJ": {
+              "target": "Package",
+              "version": "[2.0.5, )"
+            },
+            "Hangfire.AspNetCore": {
+              "target": "Package",
+              "version": "[1.8.11, )"
+            },
+            "Hangfire.Core": {
+              "target": "Package",
+              "version": "[1.8.11, )"
+            },
+            "Hangfire.InMemory": {
+              "target": "Package",
+              "version": "[0.8.0, )"
+            },
+            "Hangfire.MemoryStorage": {
+              "target": "Package",
+              "version": "[1.8.0, )"
+            },
+            "HarfBuzzSharp.NativeAssets.Linux": {
+              "target": "Package",
+              "version": "[7.3.0.1, )"
+            },
+            "IBM.EntityFrameworkCore-lnx": {
+              "target": "Package",
+              "version": "[8.0.0.200, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.3, )"
+            },
+            "Microsoft.Extensions.Logging": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
+            "Net.IBM.Data.Db2-lnx": {
+              "target": "Package",
+              "version": "[8.0.0.200, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "QRCoder-ImageSharp": {
+              "target": "Package",
+              "version": "[0.10.0, )"
+            },
+            "QuestPDF": {
+              "target": "Package",
+              "version": "[2023.12.6, )"
+            },
+            "SkiaSharp.NativeAssets.Linux": {
+              "target": "Package",
+              "version": "[2.88.7, )"
+            },
+            "System.Drawing.Common": {
+              "target": "Package",
+              "version": "[8.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Host.linux-x64",
+              "version": "[8.0.3, 8.0.3]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.103/PortableRuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "linux-x64": {
+          "#import": []
+        }
+      }
+    }
+  }
+}
